@@ -1,38 +1,54 @@
 import './App.css';
-import { BrowserRouter as Router,
+import { BrowserRouter,
          Routes,
-         Route
+         Route,
+         Link,
 } from "react-router-dom";
-import Navbar from "./components/Navbar"
-import Contribute from './pages/Contribute';
-import News from './pages/News'
+
+import {Navbar, Nav, Container} from 'react-bootstrap';
+import  Contribute  from './pages/Contribute';
+import  News  from './pages/News';
+import Services from './pages/Services';
+
+
 
 function App() {
   return (
 
-    <Navbar bg="light" expand="lg">
+    <BrowserRouter>
+    <div className='App'>
+      <Navbar bg="light" expand="lg">
           <Container>
-            <Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand>
+            <Navbar.Brand href="#home">House of Kanautica</Navbar.Brand>
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
               <Nav className="me-auto">
-                <Nav.Link href="#home">Home</Nav.Link>
-                <Nav.Link href="#link">Link</Nav.Link>
-                <NavDropdown title="Dropdown" id="basic-nav-dropdown">
-                  <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-                  <NavDropdown.Item href="#action/3.2">
-                    Another action
-                  </NavDropdown.Item>
-                  <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
-                  <NavDropdown.Divider />
-                  <NavDropdown.Item href="#action/3.4">
-                    Separated link
-                  </NavDropdown.Item>
-                </NavDropdown>
+                <Nav.Link as={Link} to="/">About Us</Nav.Link>
+                <Nav.Link as={Link} to="/news">News</Nav.Link>
+                <Nav.Link as={Link} to="/contribute"> Contribute </Nav.Link>
+                <Nav.Link as={Link} to="/services">Services</Nav.Link>
               </Nav>
             </Navbar.Collapse>
           </Container>
         </Navbar>
+
+
+        <div>
+          <Routes>
+            <Route path="/" element={<App />} />
+            <Route path="/news" element={<News />} />
+            <Route path="/contribute" element={<Contribute />} />
+            <Route path="/services" element={<Services />} />
+          </Routes>
+        </div>
+
+
+        <h2> About Us</h2>
+    </div>
+      
+    </BrowserRouter>
+
+
       
       
    

@@ -2,10 +2,10 @@ import React from 'react';
 
 //Donation Links
 
-const Contribute = () => {
+const Services = () => {
     return (
         <div>
-            <h2> Contribute </h2>
+            <h2> Services Provided </h2>
             <p> Testing form here</p>
             <ul>
                 <li> Test</li>
@@ -15,4 +15,4 @@ const Contribute = () => {
     );
 }
 
-export default Contribute;
+export default Services;
