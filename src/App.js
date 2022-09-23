@@ -44,8 +44,36 @@ function App() {
             <Route path="/contribute" element={<Contribute />} />
             <Route path="/services" element={<Services />} />
           </Routes>
+
+
+
+
     </BrowserRouter>
     </div>
+
+
+            <footer className="footer"> 
+            <div className='container'>
+              <div className='row'>
+                  <div className='footer-col'>
+                    <h4> Company </h4>
+                    <ul>
+                      <li> <a href='#'> About us </a></li>
+
+                      <li> <a href='#'> Site Credits</a></li>
+                    </ul>
+                  </div>
+
+                  <div className='footer-col'>
+                    <h4> Follow Us </h4>
+                    <div className='socials'>
+                      <li> <a href='#'> </a></li>
+                    </div>
+                  </div>
+              </div>
+
+            </div>
+          </footer>
 
      </>
    
