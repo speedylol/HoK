@@ -6,18 +6,23 @@ import { BrowserRouter,
 } from "react-router-dom";
 
 import {Navbar, Nav, Container} from 'react-bootstrap';
+//import AppRouter from './components/AppRouter';
 import  Contribute  from './pages/Contribute';
 import  News  from './pages/News';
 import Services from './pages/Services';
-
+import Home from './pages/home'
 
 
 function App() {
   return (
 
-    <BrowserRouter>
+    
+    <>
+    <div class="header-banner"> </div>
+    
     <div className='App'>
-      <Navbar bg="light" expand="lg">
+      <BrowserRouter>
+        <Navbar bg="light" expand="lg">
           <Container>
             <Navbar.Brand href="#home">House of Kanautica</Navbar.Brand>
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
@@ -32,25 +37,17 @@ function App() {
           </Container>
         </Navbar>
 
-
-        <div>
-          <Routes>
-            <Route path="/" element={<App />} />
+      
+        <Routes>
+            <Route path="/" element={<Home />} />
             <Route path="/news" element={<News />} />
             <Route path="/contribute" element={<Contribute />} />
             <Route path="/services" element={<Services />} />
           </Routes>
-        </div>
-
-
-        <h2> About Us</h2>
-    </div>
-      
     </BrowserRouter>
+    </div>
 
-
-      
-      
+     </>
    
   );
 }
