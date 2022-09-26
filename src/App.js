@@ -19,8 +19,8 @@ function App() {
     
     <>
     <div class="header-banner"> </div>
+
     
-    <div className='App'>
       <BrowserRouter>
         <Navbar bg="light" expand="lg">
           <Container>
@@ -30,7 +30,7 @@ function App() {
               <Nav className="me-auto">
                 <Nav.Link as={Link} to="/">About Us</Nav.Link>
                 <Nav.Link as={Link} to="/news">News</Nav.Link>
-                <Nav.Link as={Link} to="/contribute"> Contribute </Nav.Link>
+                <Nav.Link as={Link} to="/contribute"> Donate </Nav.Link>
                 <Nav.Link as={Link} to="/services">Services</Nav.Link>
               </Nav>
             </Navbar.Collapse>
@@ -49,10 +49,9 @@ function App() {
 
 
     </BrowserRouter>
-    </div>
 
-
-            <footer className="footer"> 
+    
+    <footer className="footer"> 
             <div className='container'>
               <div className='row'>
                   <div className='footer-col'>
@@ -67,13 +66,15 @@ function App() {
                   <div className='footer-col'>
                     <h4> Follow Us </h4>
                     <div className='socials'>
-                      <li> <a href='#'> </a></li>
+                      <li> <a href='#'> <i class="fab fa-facebook-f"> </i>  </a></li>
                     </div>
                   </div>
               </div>
 
             </div>
           </footer>
+
+
 
      </>
    

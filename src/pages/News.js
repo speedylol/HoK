@@ -13,7 +13,7 @@ const News = () => {
             left: '10%',
             right: '5%',
             width: '60%',
-            height: '100%',
+            height: '50%',
             paddingBottom: '100px',
             overflow: 'auto',
         },
