@@ -9,7 +9,7 @@ body, html, #root, .App{
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
-  background-color: antiquewhite;
+  background-color: white;
   min-height: 100vh;
 }
 
@@ -21,7 +21,7 @@ section {
   display: table;
   margin: 0;
   max-width: none;
-  background-color: #373B44;
+  background-color: rgb(255, 255, 255);
   min-height: 100%;
 
 }

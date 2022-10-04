@@ -3,19 +3,16 @@ import React from 'react';
 const News = () => {
 
     const newsPage = {
-        container: {
-            display: "flex",
-            
-            flexDirection: 'row',
-            backgroundColor: 'blue',
-            fontFamily: 'Aria',
-            position: 'absolute',
-            left: '10%',
-            right: '5%',
-            width: '60%',
-            height: '50%',
-            paddingBottom: '100px',
-            overflow: 'auto',
+
+        content: {
+            paddingTop: '32px',
+            maxWidth: '70%',
+            width: '94%',
+            backgroundColor: 'white',
+            fontSize: '1.6vw',
+            display: 'table-cell',
+            verticalAlign: 'middle',
+            flex: '1 auto',
         },
 
         article: {
@@ -23,21 +20,10 @@ const News = () => {
             width: 100,
         },
 
-        html: {
-            height: '100%',
-        },
-
-        body: {
-            minHeight: '100%',
-            display: 'flex',
-            flexDirection: 'column',
-        }
-
-
     };
 
     return (
-        <div style={newsPage.container}>
+        <div style={newsPage.content}>
             <h2> News </h2>
             
 

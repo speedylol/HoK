@@ -1,5 +1,6 @@
 import React from 'react';
 import "../index.css"
+import cashapp from './cashapp.png'
 
 //Donation Links
 
@@ -14,12 +15,18 @@ const Contribute = () => {
             paddingTop: '32px',
             maxWidth: '70%',
             width: '94%',
-            backgroundColor: 'aqua',
+            backgroundColor: 'white',
             height: '50%',
             fontSize: '1.5vw',
-            display: 'table-cell',
+            display: 'flex',
             verticalAlign: 'middle',
           },
+
+        cashLogo: {
+            height: '200px',
+            width: '300px',
+        },
+
     
     }
 
@@ -27,14 +34,17 @@ const Contribute = () => {
 
     return (
         <section>
+
+            <h2> Donate </h2>
             <div style={donatePage.content}>
-                <h2> Donate </h2>
-                <p> Testing form here</p>
-                <ul>
-                    <li> Test</li>
-                    <li> Test2</li>
-                </ul>
+                
+                <img src={cashapp} style={donatePage.cashLogo} /> 
+                <h3> $HouseOfKanautica</h3>
             </div>
+
+            <p> Donations go to supporting black trans people throughout the state of 
+                North Carolina.
+            </p>
         </section>
 
     );

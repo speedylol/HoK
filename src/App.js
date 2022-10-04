@@ -31,7 +31,6 @@ function App() {
                 <Nav.Link as={Link} to="/">About Us</Nav.Link>
                 <Nav.Link as={Link} to="/news">News</Nav.Link>
                 <Nav.Link as={Link} to="/contribute"> Donate </Nav.Link>
-                <Nav.Link as={Link} to="/services">Services</Nav.Link>
               </Nav>
             </Navbar.Collapse>
           </Container>
@@ -59,14 +58,18 @@ function App() {
                     <ul>
                       <li> <a href='#'> About us </a></li>
 
-                      <li> <a href='#'> Site Credits</a></li>
+                      <li> <a href='#'> News </a></li>
+
+                      <li> <a href='#'> Donate </a></li>
+
+                      <li> <a href={'#'}> Site Credits </a></li>
                     </ul>
                   </div>
 
                   <div className='footer-col'>
                     <h4> Follow Us </h4>
                     <div className='socials'>
-                      <li> <a href='#'> <i class="fab fa-facebook-f"> </i>  </a></li>
+                      <li> <a href='#'> <i class="fab fa-instagram"> </i>  </a></li>
                     </div>
                   </div>
               </div>
