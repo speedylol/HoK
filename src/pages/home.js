@@ -10,20 +10,20 @@ const Home = () => {
 
       content: {
         paddingTop: '16px',
-        maxWidth: '70%',
-        width: '94%',
+       
+      
         minHeight: '90%',
         backgroundColor: 'white',
         fontSize: '1.6vw',
-        display: 'table-cell',
+        display: 'block',
         verticalAlign: 'middle',
         flex: '1 auto',
       },
 
       picture: {
         backgroundImage: 'url(../../public/kanautica.jpg)',
-        position: 'absolute',
-        right: '150px',
+        
+        
       },
 
       img: {
@@ -34,14 +34,15 @@ const Home = () => {
 
       quote:{
         display: 'flex',
-        justifyContent: 'flex-end',
+        verticalAlign: 'middle',
       },
       
       quoteText:{
         width: '400px',
         fontWeight: 'bold',
         fontSize: '28px',
-      }
+      },
+
       
     }
 
@@ -49,12 +50,12 @@ const Home = () => {
     return (
       <>
 
+      <div className="home-banner"> </div>
 
-
-      <section>
+      <section >
           <div style={homePage.content}>
 
-          <div style={homePage.quote}>
+          <div style={homePage.quote} >
             <p style={homePage.quoteText}> 
               "Trans people are the ultimate symbol of a rejection of conformity"
               <br/>- Kanautica Zayre Brown
@@ -64,7 +65,7 @@ const Home = () => {
           </div>
           <br></br>
 
-          <h2> Who we are</h2>
+          <h2 align='center'> Who we are</h2>
           <p>
             House of Kanautica (HofK), a 501(c)(3) Domestic Nonprofit Corporation,
             is dedicated to providing Trans and Non-Binary folks bail fund, safe spaces

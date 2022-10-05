@@ -3,6 +3,8 @@ import Card from 'react-bootstrap/Card';
 import Button from 'react-bootstrap/Button';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
+
+//import { article1 } from './pages/article1.png';
 //import "../components/news.css"
 const News = () => {
 
@@ -16,7 +18,8 @@ const News = () => {
             backgroundColor: 'white',
             fontSize: '1.6vw',
             verticalAlign: 'middle',
-            display: 'table-cell',
+            display: 'grid',
+            placeItems: 'center',
             flex: '1 auto',
         },
 
@@ -38,7 +41,7 @@ const News = () => {
                 
                 <Col>
                     <Card style={ {width: '18rem'} }>
-                        <Card.Img variant='top' src='' />
+                        <Card.Img variant='top' src='../pages/article1.png' />
                         <Card.Title> Article 1</Card.Title>
                         <Card.Text>
                 Some quick example text to build on the card title and make up the

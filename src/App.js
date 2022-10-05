@@ -22,7 +22,7 @@ function App() {
 
     
       <BrowserRouter>
-        <Navbar bg="light" expand="lg">
+        <Navbar bg="light" expand="lg" sticky='top'>
           <Container>
             <Navbar.Brand href="#home">House of Kanautica</Navbar.Brand>
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
