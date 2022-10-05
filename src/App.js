@@ -60,9 +60,9 @@ function App() {
 
                       <li> <a href='#'> News </a></li>
 
-                      <li> <a href='#'> Donate </a></li>
+                      <li> <a href='/contribute'> Donate </a></li>
 
-                      <li> <a href={'#'}> Site Credits </a></li>
+                      <li> <a href={'#'}> Site by Nada Merghani </a></li>
                     </ul>
                   </div>
 
