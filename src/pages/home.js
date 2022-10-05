@@ -33,6 +33,9 @@ const Home = () => {
       },
 
       quote:{
+        width: '640px',
+        position: 'relative',
+        margin: '0 auto',
         display: 'flex',
         verticalAlign: 'middle',
       },
@@ -77,6 +80,10 @@ const Home = () => {
             unrelenting understanding of modern milestones, along with interconnected achievements.
           </p>
         </div>
+
+      </section>
+
+      <section>
 
       </section>
 
