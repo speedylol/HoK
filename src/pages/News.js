@@ -4,7 +4,8 @@ import Button from 'react-bootstrap/Button';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 
-//import { article1 } from './pages/article1.png';
+import  article1  from './article1.png';
+import  article2  from './stock2.jpg'
 //import "../components/news.css"
 const News = () => {
 
@@ -41,7 +42,7 @@ const News = () => {
                 
                 <Col>
                     <Card style={ {width: '18rem'} }>
-                        <Card.Img variant='top' src='../pages/article1.png' />
+                        <Card.Img variant='top' src={article1} />
                         <Card.Title> Article 1</Card.Title>
                         <Card.Text>
                 Some quick example text to build on the card title and make up the
@@ -58,7 +59,7 @@ const News = () => {
                 
                 <Col>
                     <Card style={ {width: '18rem'} }>
-                        <Card.Img variant='top' src='' />
+                        <Card.Img variant='top' src={article2} />
                         <Card.Title> Article 2</Card.Title>
                         <Card.Text>
                 Some quick example text to build on the card title and make up the
