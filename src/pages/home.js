@@ -83,7 +83,37 @@ const Home = () => {
 
       </section>
 
+      <br></br>
       <section>
+      <div class="card shadow mb-4">
+                <div class="card-body p-5">
+                    
+                    <h4 class="mb-4">Services Provided</h4>
+                    <ul class="list-unstyled list pl-5">
+
+                        <li class="mb-3 d-flex align-items-center">
+                          <i class="fa fa-flask mr-3 text-primary"></i>Supporting With Burial Expenses For Murdered Trans Individuals
+                              <h5>
+                                Fatal transphobic violence has been on the rise for decades. 
+                                Often times, when trans people are murdered their loved ones 
+                                struggle to afford large funeral costs. House of Kanautica helps support
+                                the cost of burial or cremation expenses for transgender community members who have passed.
+                              </h5>
+
+                          </li>
+
+                        <li class="mb-3 d-flex align-items-center">
+                          <i class="fa fa-hourglass-end mr-3 text-primary"></i>Consectetur adipisicing elit.
+                        </li>
+
+                        <li class="mb-3 d-flex align-items-center"><i class="fa fa-inbox mr-3 text-primary"></i>Sed do eiusmod tempor incididunt.</li>
+                        <li class="mb-3 d-flex align-items-center"><i class="fa fa-rocket mr-3 text-primary"></i>Ut labore et dolore magna aliqua. </li>
+                        <li class="mb-3 d-flex align-items-center"><i class="fa fa-trophy mr-3 text-primary"></i>Exercitation ullamco laboris nisi.</li>
+                    </ul>
+                </div>
+            </div>
+
+
 
       </section>
 

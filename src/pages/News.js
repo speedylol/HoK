@@ -6,78 +6,70 @@ import Col from 'react-bootstrap/Col';
 
 import  article1  from './article1.png';
 import  article2  from './stock2.jpg'
-//import "../components/news.css"
+import "../components/news.css"
+
 const News = () => {
 
-    const newsPage = {
 
-        content: {
-            paddingTop: '32px',
-            maxWidth: '70%',
-            width: '94%',
-            minHeight: '90%',
-            backgroundColor: 'white',
-            fontSize: '1.6vw',
-            verticalAlign: 'middle',
-            display: 'grid',
-            placeItems: 'center',
-            flex: '1 auto',
-        },
-
-        article: {
-            display: 'flex',
-            justifyContent: 'flex-start',
-            backgroundColor: 'orange',
-            width: '60%',
-            verticalAlign: 'middle',
-        },
-
-    };
 
     return (
-        <div style={newsPage.content}>
+        <div className='services_section'>
             <h2> News </h2>
 
-            <Row xs={1} md={2} className='g-4'>
-                
-                <Col>
-                    <Card style={ {width: '18rem'} }>
-                        <Card.Img variant='top' src={article1} />
-                        <Card.Title> Article 1</Card.Title>
-                        <Card.Text>
-                Some quick example text to build on the card title and make up the
-                bulk of the card's content.
-                        </Card.Text>
-                <Button variant="primary" href="https://amp.charlotteobserver.com/news/state/north-carolina/article264798014.html">
-                    Read More
-                    </Button>
-                </Card>
+            <Row>  
+                <Col className='col-lg-12 col-md-12 col-sm-12'>
 
+                    <div class='services_category'>
+                        <div class='services_card_box'>
+
+                            <Card style={ {width: '32rem'} }>
+                                <Card.Img variant='top' src={article1}/>
+                                <Card.Title> Article 1</Card.Title>
+                                <Card.Text>
+                                    Some quick example text to build on the card title and make up the
+                                    bulk of the card's content.
+
+                                    <button 
+                                        href="https://amp.charlotteobserver.com/news/state/north-carolina/article264798014.html">
+                                        Read More
+                                    </button>
+
+                                </Card.Text>
+                                
+                            </Card>
+
+                            <Card style={ {width: '32rem'} }>
+                                <Card.Img variant='top' src={article2} />
+                                <Card.Title> Article 2</Card.Title>
+                                <Card.Text>
+                                    Some quick example text to build on the card title and make up the
+                                    bulk of the card's content.
+                                </Card.Text>
+                                <Button variant="primary" href="https://ncpolicywatch.com/2021/11/05/transgender-prisoner-fighting-for-gender-affirming-surgery/">
+                                    Read More
+                                </Button>
+                            </Card>
+
+
+                        </div>
+
+                    </div>
+
+                    <div class='services_card_box serv_card_3'>
+
+
+                    </div>
                 
                     
-                </Col>
                 
-                <Col>
-                    <Card style={ {width: '18rem'} }>
-                        <Card.Img variant='top' src={article2} />
-                        <Card.Title> Article 2</Card.Title>
-                        <Card.Text>
-                Some quick example text to build on the card title and make up the
-                bulk of the card's content.
-                        </Card.Text>
-                <Button variant="primary" href="https://ncpolicywatch.com/2021/11/05/transgender-prisoner-fighting-for-gender-affirming-surgery/">
-                    Read More
-                    </Button>
-                </Card>
-
                 
-                </Col>
+            
 
-            </Row>
+            
 
-            <Row xs={1} md={2} className='g-4'>
+            
                 
-                <Col>
+               
                     <Card style={ {width: '32rem'} }>
                         <Card.Img variant='top' src='' />
                         <Card.Title> Article 3</Card.Title>
@@ -92,9 +84,9 @@ const News = () => {
 
                 
                     
-                </Col>
+              
                 
-                <Col>
+                
                     <Card style={ {width: '32rem'} }>
                         <Card.Img variant='top' src='' />
                         <Card.Title> Article 4</Card.Title>
@@ -107,11 +99,8 @@ const News = () => {
                     </Button>
                 </Card>
 
-                
                 </Col>
-
-            </Row>
-                    
+            </Row>   
 
         </div>
     );
