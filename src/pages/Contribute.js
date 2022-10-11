@@ -18,9 +18,9 @@ const Contribute = () => {
                 </div>
                 <div className="col-md-6">
                     <div id="info" className="pt-md-4">
-
-                        <div className="offer font-weight-bold"><i> $HouseOfKanautica</i></div>
-                        <div className="h4"> </div>
+                        <br/><br/>
+                        <div className="offer font-weight-bold"><i>$HouseOfKanautica </i></div>
+                        <div className="h4 font-weight-bold">  </div>
                         
                     </div>
                 </div>

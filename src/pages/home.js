@@ -56,7 +56,7 @@ const Home = () => {
       <div className="home-banner" id="about"> </div>
 
       <br/> <br/> 
-      <section >
+      <section style={{minHeight: '70vh'}}>
         <div style={homePage.content}>
 
           <div style={homePage.quote} >
@@ -87,8 +87,8 @@ const Home = () => {
       <br></br>
       <section>
 
-      <br id="serv"/>
-      <div style={homePage.content}>
+      <br id="serv" />
+      <div style={homePage.content} data-bs-spy="scroll" data-bs-target="#navbar" >
         <h2 align='center'> Services Provided</h2>
         <br/><br/>
         <ul class="list-unstyled list pl-5">
@@ -134,31 +134,7 @@ const Home = () => {
       </div>
 
 
-      <div class="card shadow mb-4" align='center'>
-                <div class="card-body p-5">
-                    
-                    <h4 class="mb-4">Services Provided</h4>
-                    <ul class="list-unstyled list pl-5">
-
-                        <li class="mb-3 d-flex align-items-center">
-                          <i class="fa fa-flask mr-3 text-primary"></i>
-                              <h5>
-
-                              </h5>
-
-                          </li>
-
-                        <li class="mb-3 d-flex align-items-center">
-                          <i class="fa fa-hourglass-end mr-3 text-primary"></i>Consectetur adipisicing elit.
-
-                        </li>
-
-                        <li class="mb-3 d-flex align-items-center"><i class="fa fa-inbox mr-3 text-primary"></i>Sed do eiusmod tempor incididunt.</li>
-                        <li class="mb-3 d-flex align-items-center"><i class="fa fa-rocket mr-3 text-primary"></i>Ut labore et dolore magna aliqua. </li>
-                        <li class="mb-3 d-flex align-items-center"><i class="fa fa-trophy mr-3 text-primary"></i>Exercitation ullamco laboris nisi.</li>
-                    </ul>
-                </div>
-            </div>
+    
 
 
 
