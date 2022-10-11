@@ -53,10 +53,11 @@ const Home = () => {
     return (
       <>
 
-      <div className="home-banner"> </div>
+      <div className="home-banner" id="about"> </div>
 
+      <br/> <br/> 
       <section >
-          <div style={homePage.content}>
+        <div style={homePage.content}>
 
           <div style={homePage.quote} >
             <p style={homePage.quoteText}> 
@@ -85,25 +86,71 @@ const Home = () => {
 
       <br></br>
       <section>
-      <div class="card shadow mb-4">
+
+      <br id="serv"/>
+      <div style={homePage.content}>
+        <h2 align='center'> Services Provided</h2>
+        <br/><br/>
+        <ul class="list-unstyled list pl-5">
+          <li class="d-flex flex-column">
+            <h3 class="p-2">Burial Expenses For Murdered Trans Individuals </h3>
+            <h5 class="p-2">
+            Fatal transphobic violence has been on the rise for decades. 
+            Often times, when trans people are murdered their loved ones 
+            struggle to afford large funeral costs. House of Kanautica helps support
+            the cost of burial or cremation expenses for transgender community members who have passed.
+            </h5>
+          </li>
+
+          <li>
+            <h3 class="p-2">Advocacy To Advance Medically Necessary Care For Trans Indivduals</h3>
+            <h5 class="p-2">
+            Throughout all walks of life, but especially in prisons, jails, and detention centers, trans people are denied
+            autonomy over their bodies. House of Kanautica recognizes gender-affirming healthcare as a medical necessity, and 
+            acts an advocate for trans folks who struggle to obtain this care.
+            </h5>
+          </li>
+
+          <li class="d-flex flex-column">
+            <h3 class="p-2">Housing Support</h3>
+            <h5 class="p-2">
+            Trans people who have been formerly incarcerated have extremely unique housing needs that often cannot be accomodated in
+            shelters and traditional housing nonprofits. House of Kanautica provides temporary financial support for trans individuals struggling with
+            housing as well as support with finding more permanent housing solutions.
+            </h5>
+
+          </li>
+
+          <li class="d-flex flex-column">
+            <h3 class="p-2">Support During and After Incarceration</h3>
+            <h5 class="p-2">
+            Prisons and jails are used as a tool to disappear Black trans people. Especially while serving their sentence, and 
+            even after they are released, Black trans people are isolated from society and unsupported by the greater community. House 
+            of Kanautica provides long-term advocacy, support, and community to incarcerated Black trans individuals.
+            </h5>
+
+          </li>
+        </ul>
+      </div>
+
+
+      <div class="card shadow mb-4" align='center'>
                 <div class="card-body p-5">
                     
                     <h4 class="mb-4">Services Provided</h4>
                     <ul class="list-unstyled list pl-5">
 
                         <li class="mb-3 d-flex align-items-center">
-                          <i class="fa fa-flask mr-3 text-primary"></i>Supporting With Burial Expenses For Murdered Trans Individuals
+                          <i class="fa fa-flask mr-3 text-primary"></i>
                               <h5>
-                                Fatal transphobic violence has been on the rise for decades. 
-                                Often times, when trans people are murdered their loved ones 
-                                struggle to afford large funeral costs. House of Kanautica helps support
-                                the cost of burial or cremation expenses for transgender community members who have passed.
+
                               </h5>
 
                           </li>
 
                         <li class="mb-3 d-flex align-items-center">
                           <i class="fa fa-hourglass-end mr-3 text-primary"></i>Consectetur adipisicing elit.
+
                         </li>
 
                         <li class="mb-3 d-flex align-items-center"><i class="fa fa-inbox mr-3 text-primary"></i>Sed do eiusmod tempor incididunt.</li>

@@ -1,51 +1,34 @@
 import React from 'react';
 import "../index.css"
-import cashapp from './cashapp.png'
+import "../components/donate.css"
+//import cashapp from './cashapp.png'
 
 //Donation Links
 
 const Contribute = () => {
 
-    const donatePage = {
-
-  
-
-        content: {
-            margin: "auto",
-            paddingTop: '32px',
-            maxWidth: '70%',
-            width: '94%',
-            backgroundColor: 'white',
-            height: '50%',
-            fontSize: '1.5vw',
-            display: 'flex',
-            verticalAlign: 'middle',
-          },
-
-        cashLogo: {
-            height: '200px',
-            width: '300px',
-        },
-
-    
-    }
-
-
 
     return (
+
+        <>
         <section>
+            <div className="row">
+            <div className="col-md-6" id="image">
+                        
+                </div>
+                <div className="col-md-6">
+                    <div id="info" className="pt-md-4">
 
-            <h2> Donate </h2>
-            <div style={donatePage.content}>
-                
-                <img src={cashapp} style={donatePage.cashLogo} /> 
-                <h3> $HouseOfKanautica</h3>
+                        <div className="offer font-weight-bold"><i> $HouseOfKanautica</i></div>
+                        <div className="h4"> </div>
+                        
+                    </div>
+                </div>
             </div>
-
-            <p> Donations go to supporting black trans people throughout the state of 
-                North Carolina.
-            </p>
         </section>
+        
+        </>
+
 
     );
 }

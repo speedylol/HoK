@@ -24,11 +24,11 @@ function App() {
       <BrowserRouter>
         <Navbar bg="light" expand="lg" sticky='top'>
           <Container>
-            <Navbar.Brand href="#home">House of Kanautica</Navbar.Brand>
+            <Navbar.Brand href="#serv">House of Kanautica</Navbar.Brand>
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
               <Nav className="me-auto">
-                <Nav.Link as={Link} to="/">About Us</Nav.Link>
+                <Nav.Link as={Link} to="/" href="#about">About Us</Nav.Link>
                 <Nav.Link as={Link} to="/news">News</Nav.Link>
                 <Nav.Link as={Link} to="/contribute"> Donate </Nav.Link>
               </Nav>
