@@ -53,7 +53,7 @@ function App() {
     
     <footer className="footer"> 
             <div className='container'>
-              <div className='row'>
+              <div className='footerRow'>
                   <div className='footer-col'>
                     <h4> Company </h4>
                     <ul>
