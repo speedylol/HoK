@@ -13,9 +13,38 @@ const News = () => {
 
 
     return (
+        <>
+
+
+
         <div className='services_section'>
             <h2> News </h2>
 
+
+        <div className='news_post'>
+            <div className='article_img'>
+                <img src={article1}/>
+            </div>
+
+            <div className='article_info'> 
+                <div className='article_date'> 
+                    <span> 10/15/2022 </span>
+                    <span> October </span>
+                </div>
+
+                <h1 className='article_title'> Article 1 </h1>
+                <p className='article_text'>
+                     Some quick example text to build on the card title and make up the
+                    bulk of the card's content. 
+                </p>
+
+                <a href='#' className='article_link'> Read More</a>
+            </div>
+        </div>
+
+
+
+{/*         
             <Row>  
                 <Col className='col-lg-12 col-md-12 col-sm-12'>
 
@@ -100,9 +129,11 @@ const News = () => {
                 </Card>
 
                 </Col>
-            </Row>   
+            </Row>    */}
 
         </div>
+
+        </>
     );
 }
 
