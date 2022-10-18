@@ -10,87 +10,101 @@ import "../components/news.css"
 
 const News = () => {
 
-
-
     return (
+        <>
+
+
+
         <div className='services_section'>
             <h2> News </h2>
 
-            <Row>  
-                <Col className='col-lg-12 col-md-12 col-sm-12'>
 
-                    <div class='services_category'>
-                        <div class='services_card_box'>
+        <div className='news_post'>
+            <div className='article_img'>
+                <img src={article1}/>
+            </div>
 
-                            <Card style={ {width: '32rem'} }>
-                                <Card.Img variant='top' src={article1}/>
-                                <Card.Title> Article 1</Card.Title>
-                                <Card.Text>
-                                    Some quick example text to build on the card title and make up the
-                                    bulk of the card's content.
+            <div className='article_info'> 
+                <div className='article_date'> 
+                    <span> 10/15/2022 </span>
+                    <span> October </span>
+                </div>
 
-                                    <button 
-                                        href="https://amp.charlotteobserver.com/news/state/north-carolina/article264798014.html">
-                                        Read More
-                                    </button>
+                <h1 className='article_title'> Kanautica Zayre-Brown's Lawsuit Against State Prison Proceeds</h1>
+                <p className='article_text'>
+                     House of Kanautica founder Kanautica Zayre-Brown was held in a mens prison for years. This article highlights her fight to be moved to a women's prison.
+                </p>
 
-                                </Card.Text>
-                                
-                            </Card>
+                <a href='https://amp.charlotteobserver.com/news/state/north-carolina/article264798014.html' className='article_link'> Read More</a>
+            </div>
+        </div>
 
-                            <Card style={ {width: '32rem'} }>
-                                <Card.Img variant='top' src={article2} />
-                                <Card.Title> Article 2</Card.Title>
-                                <Card.Text>
-                                    Some quick example text to build on the card title and make up the
-                                    bulk of the card's content.
-                                </Card.Text>
-                                <Button variant="primary" href="https://ncpolicywatch.com/2021/11/05/transgender-prisoner-fighting-for-gender-affirming-surgery/">
-                                    Read More
-                                </Button>
-                            </Card>
+        <div className='news_post'>
+            <div className='article_img'>
+                <img src={article2}/>
+            </div>
 
+            <div className='article_info'> 
+                <div className='article_date'> 
+                    <span> 10/15/2022 </span>
+                    <span> October </span>
+                </div>
 
-                        </div>
+                <h1 className='article_title'> Kanautica Fights For Gender Affirming Care </h1>
+                <p className='article_text'>
+                     The state is being held accountable for denying gender affirming care to Kanautica Zayre-Brown. House of Kanautica stands with Kanautica as she fights for gender affirming care while incarcerated.  
+                </p>
 
-                    </div>
+                <a href='https://ncpolicywatch.com/2021/11/05/transgender-prisoner-fighting-for-gender-affirming-surgery/' className='article_link'> Read More</a>
+            </div>
+        </div>
 
-                    <div class='services_card_box serv_card_3'>
+        <div className='news_post'>
+            <div className='article_img'>
+                <img src={article2}/>
+            </div>
 
+            <div className='article_info'>
+                <div className='article_date'> 
+                    <span> 10/15/2022 </span>
+                    <span> October </span>
+                </div>
 
-                    </div>
+                <h1 className='article_title'> House of Kanautica and Other Groups Commit $10,000 To Black Trans Community </h1>
+                <p className='article_text'>
+                     Following the brutal murder of two black trans women, House of Kanautica and other groups local to Charlotte, NC committed $10,000 to provide housing and support for housing insecure black trans folk. 
+                </p>
 
-               
-                    <Card style={ {width: '32rem'} }>
-                        <Card.Img variant='top' src='' />
-                        <Card.Title> Article 3</Card.Title>
-                        <Card.Text>
-                Some quick example text to build on the card title and make up the
-                bulk of the card's content.
-                        </Card.Text>
-                <Button variant="primary" href="https://www.wbtv.com/2021/04/21/lgbtq-groups-commit-support-relief-black-transgender-community/?outputType=amp">
-                    Read More
-                    </Button>
-                </Card>
-
-                
-                
-                    <Card style={ {width: '32rem'} }>
-                        <Card.Img variant='top' src='' />
-                        <Card.Title> Article 4</Card.Title>
-                        <Card.Text>
-                Some quick example text to build on the card title and make up the
-                bulk of the card's content.
-                        </Card.Text>
-                    <Button variant="primary" href="https://www.theroot.com/kanautica-zayre-brown-and-the-cold-routine-cruelty-of-1832819640/amp">
-                    Read More
-                    </Button>
-                </Card>
-
-                </Col>
-            </Row>   
+                <a href='https://www.wbtv.com/2021/04/21/lgbtq-groups-commit-support-relief-black-transgender-community/?outputType=amp' className='article_link'> Read More</a>
+            </div>
 
         </div>
+        
+
+        <div className='news_post'>
+            <div className='article_img'>
+                <img src={article2}/>
+            </div>
+
+            <div className='article_info'> 
+                <div className='article_date'> 
+                    <span> 10/15/2022 </span>
+                    <span> October </span>
+                </div>
+
+                <h1 className='article_title'> Kanautica Zayre-Brown and the Cold, Routine Cruelty of How the Criminal Justice System Treats Trans Women4 </h1>
+                <p className='article_text'>
+                     Prisons and jails are exceptionally cruel to Black trans women. This rings true in the experience of Kanautica Zayre-Brown, a trans woman who has spent a majority of her sentence incarcerated in men's prisons and denied gender affirming care. 
+                </p>
+
+                <a href='https://www.theroot.com/kanautica-zayre-brown-and-the-cold-routine-cruelty-of-1832819640/amp' className='article_link'> Read More</a>
+            </div>
+        </div>
+        
+
+    </div>
+
+        </>
     );
 }
 
