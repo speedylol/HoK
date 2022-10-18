@@ -1,11 +1,10 @@
 import React from 'react';
-import Card from 'react-bootstrap/Card';
-import Button from 'react-bootstrap/Button';
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
+
 
 import  article1  from './article1.png';
-import  article2  from './stock2.jpg'
+import  article2  from './kanautica.jpg'
+import  article3 from './article3.jpg'
+import article4 from './kanautica2.jpg'
 import "../components/news.css"
 
 const News = () => {
@@ -41,7 +40,7 @@ const News = () => {
 
         <div className='news_post'>
             <div className='article_img'>
-                <img src={article2}/>
+                <img src={article2} style={{ minHeight: '25rem', maxHeight: '25rem' }}/>
             </div>
 
             <div className='article_info'> 
@@ -61,10 +60,10 @@ const News = () => {
 
         <div className='news_post'>
             <div className='article_img'>
-                <img src={article2}/>
+                <img src={article3}  style={{ minHeight: '20rem', maxHeight: '20rem' }}/>
             </div>
 
-            <div className='article_info'>
+            <div className='article_info' >
                 <div className='article_date'> 
                     <span> 10/15/2022 </span>
                     <span> October </span>
@@ -83,16 +82,16 @@ const News = () => {
 
         <div className='news_post'>
             <div className='article_img'>
-                <img src={article2}/>
+                <img src={article4}/>
             </div>
 
-            <div className='article_info'> 
+            <div className='article_info' style={{ lineHeight: '1.6rem' }}> 
                 <div className='article_date'> 
                     <span> 10/15/2022 </span>
                     <span> October </span>
                 </div>
 
-                <h1 className='article_title'> Kanautica Zayre-Brown and the Cold, Routine Cruelty of How the Criminal Justice System Treats Trans Women4 </h1>
+                <h1 className='article_title'> Kanautica Zayre-Brown and the Cold, Routine Cruelty of How the Criminal Justice System Treats Trans Women </h1>
                 <p className='article_text'>
                      Prisons and jails are exceptionally cruel to Black trans women. This rings true in the experience of Kanautica Zayre-Brown, a trans woman who has spent a majority of her sentence incarcerated in men's prisons and denied gender affirming care. 
                 </p>
@@ -101,6 +100,7 @@ const News = () => {
             </div>
         </div>
         
+        <br></br>
 
     </div>
 
