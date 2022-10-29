@@ -54,7 +54,7 @@ function App() {
             <div className='container'>
               <div className='row'>
                   <div className='footer-col'>
-                    <h4> Company </h4>
+                    <h4> House of Kanautica </h4>
                     <ul>
                       <li> <a href='#'> About us </a></li>
 
@@ -62,7 +62,7 @@ function App() {
 
                       <li> <a href='/contribute'> Donate </a></li>
 
-                      <li> <a href={'#'}> Site by Nada Merghani </a></li>
+                      <li> <a href={'#'}> Site by Nada Merghani and Malcolm Speed </a></li>
                     </ul>
                   </div>
 
